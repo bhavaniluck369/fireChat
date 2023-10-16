@@ -31,8 +31,8 @@ function SendMessages({ scroll }) {
     width: '75%',
     fontSize: '15px',
     fontWeight: '550',
-    marginLeft: '5px',
-    marginBottom: '3px',
+    marginRight:'20px',
+    marginBottom: '8px',
     borderStyle: 'solid',
     borderRadius: '10px',
     padding: '8px',
@@ -44,8 +44,7 @@ function SendMessages({ scroll }) {
     backgroundColor: '#058728',
     fontSize: '15px',
     fontWeight: '550',
-    marginRight: '5px',
-    marginBottom: '3px',
+    marginBottom: '8px',
     maxWidth: '150px',
     borderStyle: 'none',
     borderRadius: '20px',
@@ -57,7 +56,7 @@ function SendMessages({ scroll }) {
     <div>
       <form onSubmit={sendMessage}>
         <div style={{display:'flex',justifyContent:'center'}}>
-          <input type='text' className='' value={msg} style={iStyle} onChange={(e) => setMsg(e.target.value)} placeholder='messages....' />
+          <input type='text'  value={msg} style={iStyle} onChange={(e) => setMsg(e.target.value)} placeholder='messages....' />
           <button type='submit' style={btStyle} >Send</button>
         </div>
       </form>
